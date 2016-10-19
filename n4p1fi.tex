@@ -1,0 +1,196 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{graphics}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{url}
+\usepackage{CJKutf8}
+
+%\usepackage[screen,nopanel]{pdfscreen}
+%\usepackage{url}
+
+\usetheme{metropolis}
+
+\title{Projet agile N4}
+\author{
+  %\includegraphics[width=3cm]{logo_azae.png}
+  Thomas Clavier \\
+  \small \url{https://github.com/tclavier/intro-projet-agile-iut}
+}
+  
+\date{}
+
+\logo{
+  \raisebox{-0.5\height}{\includegraphics[width=1cm]{cc_by_sa} }
+}
+
+
+\begin{document}
+
+\frame{\titlepage}
+
+\include{includes/2pieds}
+
+\begin{frame}{C'est quoi ?}
+ 
+  {\Large \alert{Être agile} et pas faire de l'Agile.}
+
+  \vspace{6mm}
+  C'est avant tout un état d'esprit partagé par l'ensemble des participants à un projet.
+\end{frame}
+
+\begin{frame}{Être agile}
+  "Les firmes qui survivent dans le long terme ne sont pas celles qui sont les plus fortes ou les plus intelligentes, mais celles qui s'adaptent le mieux aux changements d'environnement"
+
+  \flushright{Hiroshi Okuda, Toyota}
+
+\end{frame}
+
+\begin{frame}{Le manifeste agile}
+  \large
+  \alert{Individuals and interactions} over processes and tools\newline
+  \alert{Working software} over comprehensive documentation\newline
+  \alert{Customer collaboration} over contract negotiation\newline
+  \alert{Responding to change} over following a plan
+\end{frame}
+
+\begin{frame}{Valeurs et principes}
+  \Large Des cycles courts, un produit en production à chaque fin de cycle et des producteurs de valeurs qui s'améliorent continuellement.
+\end{frame}
+
+\begin{frame}{Le radiateur d'information}
+  \begin{itemize}
+    \item Donner les moyens aux acteurs d'être autonomes
+    \item Faire rayonner l'information
+    
+    \begin{itemize}
+      \item Vision du projet, Proposition de valeur unique
+      \item Date de livraison, avancement, etc.
+      \item Planning des congés
+      \item Actions d'améliorations
+      \item Backlog
+      \item Problèmes
+      \item Etc.
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Exemple de radiateur}
+  \center
+  \includegraphics[width=10cm]{includes/radiateur}
+\end{frame}
+
+\begin{frame}{Kaizen 
+    {\begin{CJK*}{UTF8}{mj} 改善 \end{CJK*}}
+  }
+  \center
+  \includegraphics[width=6cm]{includes/pdca}
+\end{frame}
+
+\begin{frame}{Kaizen 
+    {\begin{CJK*}{UTF8}{mj} 改善 \end{CJK*}}
+  }
+  
+  \begin{itemize}
+    \item \alert{Plan} : Identifier une action d'amélioration et un élément observable qui pourra permettre de déterminer si l'action à porté ses fruits ou pas.
+    \item \alert{Do} : Faire l'action sur un temps donné, une itération par exemple.
+    \item \alert{Check} : Prendre le temps de mesurer si l'action a apporté le changement souhaité
+    \item \alert{Act} : Décider, l'action est peut-être à répéter, une autre action peut en découler, etc.
+  \end{itemize}
+
+\end{frame}
+
+\newcolumntype{g}{>{\columncolor[gray]{0.8}}c}
+
+\begin{frame}{Planning de la semaine}{}
+  {
+    \center
+    \begin{tabular}{l | c | c || c | c | }
+                    & \textbf{20/10} & \textbf{21/10} & \textbf{24/10} & \textbf{25/10}  \\
+      \hline
+      08h00 - 10h00 & Sprint 0       & Sprint         & Sprint         & Sprint          \\
+      \hline
+      10h00 - 12h00 & Sprint         & Sprint         & Sprint         & Sprint          \\
+      \hline
+      \hline
+      13h30 - 15h30 & Sprint         & Sprint         & Sprint         & Salon           \\
+      \hline
+      15h30 - 17h30 & Sprint         & Sprint         & Sprint         & Rétrospective   \\
+      \hline
+    \end{tabular}
+  }
+
+\end{frame}
+
+\begin{frame}{Détail du Sprint 0}
+  \begin{itemize}
+    \item Partager la vision du produit
+    \item Découper et estimer le backlog
+    \item Construire la proposition de valeur unique :
+    \begin{itemize}
+      \item Cible
+      \item Problème
+      \item Solution
+    \end{itemize}
+    \item Initier la pile technique et montrer que l'on est capable de livrer de la valeur.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Un Sprint}
+  \begin{itemize}
+    \item 1,5h de production
+    \item 30 minutes pour améliorer la capacité de production
+    \begin{itemize}
+      \item Démo
+      \item Rétrospective
+      \item Action d'amélioration
+      \item Pause
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Salon}
+  Vous devez convaincre que le travail réalisé durant la semaine était extraordinaire.
+  \begin{itemize}
+    \item Montrez nous le résultat
+    \item Expliquez ce que vous avez appris
+  \end{itemize}
+
+  Support : une déco du stand avec des posters.
+
+\end{frame}
+
+\begin{frame}{Contraintes}
+  \begin{itemize}
+    \item Un serveur REST en java qui gère l'ensemble de la logique métier
+    \item Une application cliente en Javascript : Single Page Application
+    \item Une application cliente Android
+    \item Java + maven + git
+    \item Déployé en production à chaque fin de sprint
+    \item En option, des clients HTML, swing ou autre.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Mes attentes 1/2}
+  \begin{itemize}
+    \item Un projet git serveur java + js
+    \item Un projet git android
+    \item La proposition de valeur unique
+    \item La déco du stand
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Mes attentes 2/2}
+  À chaque fin de sprint, dans le répertoire {\color{gray}\texttt{doc/}} du projet serveur vous ajouterez un sous répertoire {\color{gray}\texttt{sprint-X}} avec le bon numéro de sprint et à l'intérieur vous mettrez : 
+  \begin{itemize}
+    \item une photo du radiateur d'information, 
+    \item un fichier Markdown avec :
+    \begin{itemize}
+      \item Ce que vous avez appris durant le sprint (cf. C et A du PDCA)
+      \item Ce que vous allez faire durant le prochain sprint, pourquoi et comment vous allez le mesurer (cf. P du PDCA)
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+\end{document}
+

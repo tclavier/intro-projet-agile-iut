@@ -5,13 +5,25 @@
 \usepackage{multirow}
 \usepackage{colortbl}
 \usepackage{CJKutf8}
+\usepackage{colortbl}
+\usepackage{changepage}
 
 %\usepackage[screen,nopanel]{pdfscreen}
 %\usepackage{url}
 
 \usetheme{metropolis}
 
-\title{Mini-projet agile N3 2017}
+\definecolor{LightButter}{rgb}{0.98,0.91,0.31}
+\definecolor{LightOrange}{rgb}{0.98,0.68,0.24}
+\definecolor{LightChocolate}{rgb}{0.91,0.72,0.43}
+\definecolor{LightChameleon}{rgb}{0.54,0.88,0.20}
+\definecolor{LightSkyBlue}{rgb}{0.45,0.62,0.81}
+\definecolor{LightPlum}{rgb}{0.68,0.50,0.66}
+\definecolor{LightScarletRed}{rgb}{0.93,0.16,0.16}
+
+
+
+\title{Mini-projet agile N3 2018}
 \author{
   %\includegraphics[width=3cm]{logo_azae.png}
 }
@@ -27,7 +39,7 @@
 
 \frame{\titlepage}
 
-\setbeamertemplate{frame footer}{    https://github.com/tclavier/intro-projet-agile-iut}
+\setbeamertemplate{frame footer}{https://gitlab.com/tclavier/intro-projet-agile-iut}
 
 \begin{frame}{C'est quoi ?}
  
@@ -79,8 +91,8 @@
 \begin{frame}{Le radiateur d'information}
   \begin{itemize}
     \item Donner les moyens aux acteurs d'être autonomes
-    \item Faire rayonner l'information
-    
+    \item Faire rayonner l'information (donc pas de Trello ou Jira)
+
     \begin{itemize}
       \item Vision du projet, Proposition de valeur unique
       \item Date de livraison, avancement, etc.
@@ -124,15 +136,17 @@
   {
     \center
     \begin{tabular}{l | g | g | g  }
-      & \textbf{04/09} & \textbf{05/09} & \textbf{06/09} \\
+      & \textbf{05/09} & \textbf{06/09} \\
       \hline
-      08h00 - 10h00 &          & Sprint & Sprint \\
+      08h00 - 10h00 & Amphi + TD & Sprint \\
       \hline
-      10h00 - 12h00 &          & Sprint & Sprint \\
+      10h00 - 12h00 & Sprint 0   & Sprint \\
       \hline
-      13h30 - 15h30 & Amphi + TD & Sprint & Salon à 13h00 \\
+      13h30 - 15h30 & Sprint     & Sprint \\
       \hline
-      15h30 - 17h30 & Sprint 0 & Sprint & Rétrospective \\
+      15h30 - 16h30 & Code       & Démo pour les S1 \\
+      \hline
+      17h30 - 18h30 & Sprint     & Rétrospective \\
       \hline
     \end{tabular}
   }
@@ -142,17 +156,17 @@
 \begin{frame}{Un Sprint}
   \begin{itemize}
     \item 1h30 de production
-    \item 30 minutes pour améliorer la capacité de production
+    \item 30 minutes pour s'améliorer
     \begin{itemize}
-      \item Démo 
-      \item Rétrospective 
+      \item Démo
+      \item Rétrospective
       \item Action d'amélioration
     \end{itemize}
   \end{itemize}
 \end{frame}
 
 \begin{frame}{Détail du Sprint 0}
-  2h, 4 Objectifs : 
+  2h, 4 Objectifs :
   \begin{itemize}
     \item Partager la vision du produit
     \item Découper et estimer le backlog
@@ -166,8 +180,8 @@
   \end{itemize}
 \end{frame}
 
-\begin{frame}{Salon}
-  Vous devez convaincre que le travail réalisé durant les 2 jours et demi était extraordinaire et montrer aux premières années ce qu'ils seront capables de faire dans 1 an.
+\begin{frame}{Démo pour les S1}
+  Vous devez convaincre que le travail réalisé durant les 2 jours était extraordinaire et montrer aux premières années ce qu'ils seront capables de faire dans 1 an.
   \begin{itemize}
     \item Montrez nous le résultat
     \item Expliquez ce que vous avez appris
@@ -178,8 +192,100 @@
   \begin{itemize}
     \item Du java
     \item Une IHM en mode texte
+    \item Slack pour les communications
+    \item À chaque fin de sprint
+    \begin{itemize}
+      \item Un répertoire sprint-X
+      \item avec dedans un fichier README.md
+      \item et une photo du radiateur d'information
+    \end{itemize}
   \end{itemize}
 \end{frame}
 
+\begin{frame}[fragile]{README.md}
+  \tiny
+  \begin{verbatim}
+# Rétrospective de sprint X
+
+Nom du scrum master du sprint : 
+
+## Ce que nous avons fait durant ce sprint
+Donnez ici la liste des histoires utilisateurs que vous avez livrés durant ce sprint.
+
+## Ce que nous allons faire durant le prochain sprint
+Donnez ici la liste des histoires utilisateurs que vous vous engagez à terminer durant le prochain sprint.
+
+## PDCA 
+### Qu'avons nous testé durant ce sprint ? 
+
+### Qu'avons nous observé ? 
+
+### Quelle décision prenons nous suite à cette expérience ? 
+
+### Qu'allons nous tester durant les 2 prochaines heures ? 
+
+### À quoi verra-t-on que celà à fonctionné ?
+
+# Mémo
+N'oubliez pas d'ajouter une photo du radiateur d'information au moment de la rétrospective.
+  \end{verbatim}
+\end{frame}
+
+
+
+\begin{frame}{Équipes}
+\Tiny
+\begin{tabular}{l l l l l l}
+\textbf{Équipe 1} & \textbf{Équipe 2} & \textbf{Équipe 3} & \textbf{Équipe 4} & \textbf{Équipe 5} & \textbf{Équipe 6} \\
+BREVIERE Lu.  & BLANQUART Si.  & FOUANT Ma.     & CASSORET Ma. & DANGLOT Cl.   & BADAOUI Na.  \\
+DARROMAN Ba.  & BLONDIN Lu.    & LECLERCQ Ga.   & CLUSMAN Lu.  & FERNANDES Ni. & CONGIN Ga.   \\
+DOGIMONT Lu.  & DA CRUZ Ka.    & LIETAR Th.     & MANS Lé.     & GUILLEMIN Ré. & FOURNIER Hu. \\
+FINOT El.     & DESREUMAUX Al. & OUTTIER Sa.    & OUVRY Th.    & LANNOY Fr.    & LECOCQ Va.   \\
+PRACA Co.     & POULAIN Ro.    & REBEILLEAU Pi. & RANSON Fl.   & ONQUIERT An.  & PEDRO Ni.    \\
+\\
+\textbf{Équipe 7} & \textbf{Équipe 8} & \textbf{Équipe 9} & \textbf{Équipe 10} & \textbf{Équipe 11} & \textbf{Équipe 12} \\
+BENNACER Mo.   & BLERREAU Al.   & BAUDRY Ma.   & CHOMBART Ga.  & BASCOP Ar.     & DELGRANGE Pi.  \\
+BLOCH Sa.      & COUSSEMENT Ni. & BOURDIER Cl. & CLARISSE Ax.  & COLPART Ma.    & DURIEZ Qu.     \\
+DEJONGHE Gr.   & FIEVET Fl.     & POTIER Fl.   & COPIN St.     & DESPELCHIN Br. & HANSON An.     \\
+DELIESSCHE Qu. & PANNIER Ba.    & PRUNIER Fl.  & TELLIER Be.   & MASSON Ti.     & SHIPMAN Th.    \\
+FORESTIER Na.  & PAYEN Cl.      & THEBAUD Em.  & VANRYSSEL Ju. & SOW Yo.        & VERZELE Ar.    \\
+\\
+\textbf{Équipe 13} & \textbf{Équipe 14} & \textbf{Équipe 15} & \textbf{Équipe 16} & \textbf{Équipe 17} & \textbf{Équipe 18} \\
+BAUVIN Ra.  & \cellcolor[gray]{0.8} RABBOUJ Bi.& FLORENTIN Be.   & BAZIN Je.      & DELBROUCQ Al.  & COFFIN Ne. \\
+DUHAMEL Al. & DUBOIS Gu.          & GRENIER Pi.     & DEGAND Ma.     & LAHOUSSE Lu.   & DEFEVER Co.\\
+GELDHOF Su. & LABADIE Ni.         & \cellcolor[gray]{0.8}SPILMONT Mi. & KARAOUZENE Na. & LANDSCHOOT To. & LECOCQ Ma. \\
+LETORET Ji. & MEERSSEMAN Lé.      & MARCANT Ai.     & MONCHEAUX Ba.  & PLAISANT Fl.   & MILHE Th.  \\
+POTEAU Al.  & PEREIRA Ni.         & PIRES Th.       & VINTAER Jo.    & RINGEVAL Al.   & SPECQUE An.\\
+       \\
+\textbf{Équipe 19} & \textbf{Équipe 20} & \textbf{Équipe 21} \\
+DALLENNE Gu. & LEMAIRE Be.     &  CANONNE Th.          & & \multicolumn{2}{l}{\cellcolor[gray]{0.8} Changement de groupe}\\
+DELAPAS La.  & OLIVIER Em.     &  GENART Va.           \\
+HASSAN Ou.   & POULY Th.       & \multicolumn{2}{l}{HORGNIES-CUVELIER Qu.}\\
+SADON Da.    & SOUVANTHONG Do. &  LEJEUNE Sa.          \\
+             & ZERROUKI Zi.    &  PERROT Is.           \\
+\end{tabular}
+
+\end{frame}
+
+\begin{frame}{Salles}
+\small
+\begin{tabular}{l|l }
+\textbf{TD} & \textbf{Équipes} \\
+    \hline
+0A36 & 1, 2, 3, 4 \\
+0A47 & 5, 6, 7, 8 \\
+0A49 & 9, 10, 11, 12 \\
+0A53 & 13, 14, 15, 16 \\
+0AA06 & 17, 18, 19, 20, 21\\
+\end{tabular}
+\begin{tabular}{l|l}
+\textbf{TP} & \textbf{Équipes} \\
+    \hline
+4A20 & 1, 2, 3, 4, 5 \\
+4A18 & 6, 7, 8, 9, 10 \\
+4A14 & 11, 12, 13, 14, 21 \\
+4A12 + 4A10 & 15, 16, 17, 18, 19, 20 \\
+\end{tabular}
+\end{frame}
 \end{document}
 
